@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Calculadora con Expresiones Regulares</title>
+    <title>Calculadora Simple</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
     <header>
         <img src="../images/fips-logo.png" alt="Logo Universidad">
     </header>
     
-
+    <main>
+        <h1>Calculadora Simple con Expresiones Regulares</h1>
+        <form method="POST" action="/cgi-bin/calculadora.pl">
+            <input type="text" name="expression" required>
+            <button type="submit">Calcular</button>
+        </form>
+        
+    </main>
     
     <footer>
-        <p> Cristhian Bravo</p>
+        <p>Cristhian Bravo</p>
     </footer>
 </body>
 </html>
