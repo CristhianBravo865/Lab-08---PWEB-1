@@ -12,13 +12,22 @@
     
     <main>
         <h1>Calculadora Simple con Expresiones Regulares</h1>
-        <form method="POST" action="/cgi-bin/calculadora.pl">
-            <input type="text" name="expression" required>
-            <button type="submit">Calcular</button>
-        </form>
-        
+        <div class="calculadora-container">
+            <form method="POST" action="/cgi-bin/calculadora.pl" class="calculadora-form">
+                <input type="text" name="expression" placeholder="Ingresa tu expresión" required class="calculadora-input">
+                <button type="submit" class="calculadora-button">Calcular</button>
+            </form>
+        </div>
+
+        <h2>Instrucciones:</h2>
+        <p class="instructiones-text">Sigue los siguientes pasos para realizar cálculos con expresiones regulares:</p>
+        <ul class="instructiones-list">
+            <li>Introduce una expresión matemática en el campo de texto.</li>
+            <li>Usa operadores como <strong>+</strong>, <strong>-</strong>, <strong>*</strong>, <strong>/</strong>.</li>
+            <li>Presiona el botón <strong>Calcular</strong> para obtener el resultado.</li>
+        </ul>
     </main>
-    
+
     <footer>
         <p>Cristhian Bravo</p>
     </footer>
